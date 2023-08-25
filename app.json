@@ -1,0 +1,32 @@
+{
+  "id": "c04dfc2f-96fc-4b65-8c42-37fb28fc68de",
+  "name": "Hellebrekers-Base-Application",
+  "publisher": "KasperDeBruin",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "https://hellebrekers.nl",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {	
+      "from": 50700,
+      "to": 50849
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

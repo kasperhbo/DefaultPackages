@@ -1,0 +1,110 @@
+@keyframes css-294 {
+    0% {
+        left: -200%;
+    }
+    90% {
+        left: 300%;
+    }
+    100% {
+        left: 300%;
+    }
+}
+@keyframes css-295 {
+    0% {
+        background-position: -700% 0px;
+    }
+    1% {
+        background-position: -700% 0px;
+    }
+    40% {
+        background-position: 700% 0px;
+    }
+    100% {
+        background-position: 700% 0px;
+    }
+}
+@keyframes css-296 {
+    0% {
+        background-position: -80% 0px;
+    }
+    60% {
+        background-position: 300% 0px;
+    }
+    100% {
+        background-position: 300% 0px;
+    }
+}
+.backgroundShine-297 {
+    overflow: hidden;
+    position: relative;
+}
+.backgroundShine-297::after {
+    width: 250%;
+    height: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -160%;
+    rotate: -20deg;
+    background-image: 
+    conic-gradient(from var(--border-angle), transparent 20%, #0066ff, #00ff66);
+   
+    background-repeat: no-repeat;
+    animation-name: css-294;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+/* .borderShine-298 {
+    position: relative;
+} */
+.borderShine {
+    overflow: hidden;
+    position: relative;
+    border: 2px solid transparent;  /* Adjust the border width as needed */
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(0deg, rgba(0, 183, 195, 0) 10%, rgba(0, 183, 195, 0.5) 35%, rgba(98, 48, 240, 0.5) 65%, hwb(0 0% 0% / 0.616) 90%);
+    background-size: 100% 2px, /* Top and bottom border height */
+                    100% 100%; /* This is for the main background if any */
+    background-repeat: no-repeat;
+    background-position: center top, /* This positions the top border */
+                         center bottom, /* This positions the bottom border */
+                         center center; /* This positions the main background if any */
+}
+
+.borderShine::before, .borderShine::after {
+    width: 250%;
+    height: 2px; /* Adjust the border height as needed */
+    display: block;
+    content: "";
+    position: absolute;
+    left: -160%;
+    border-image: linear-gradient(90deg, rgba(0, 183, 195, 0) 10%, rgba(0, 183, 195, 0.5) 35%, rgba(98, 48, 240, 0.5) 65%, hwb(0 0% 0% / 0.616) 90%);
+    animation-name: borderShineAnimation;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.borderShine::before {
+    top: 0; /* This positions the top border */
+}
+
+.borderShine::after {
+    bottom: 0; /* This positions the bottom border */
+}
+
+@keyframes borderShineAnimation {
+    0% {
+        left: -200%;
+    }
+    90% {
+        left: 300%;
+    }
+    100% {
+        left: 300%;
+    }
+}   
